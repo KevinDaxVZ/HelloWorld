@@ -1,0 +1,7 @@
+#include<stdio.h>
+using namespace std;
+int main(){
+       cout<<"Hello world, i am new user :d"; 							
+			 
+return 0;
+}
