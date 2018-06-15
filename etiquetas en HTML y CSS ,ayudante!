@@ -1,0 +1,26 @@
+etiquetas en HTML
+-----------------------------------------
+<html></html>        para identificar que es un documento html
+<head></head>        cabeza principal del titulo  ,ejemplo <head><title>hola</title><head>
+<title></title>      para poner un nombre arriba de la URL, va dentro de <head></head>
+<b></b>              poner negrita un contenido
+<strong></strong>    poner en negrito un contenido con mas enfacis "no abusar de esta etiqueta"
+<body></body>        cuerpo principal donde ira el texto
+<p></p>              donde pondremos parrafo
+<h1></h1>            titul principal , <h2></h2> titulo secundario, y asi sucesivamente
+<br/>                salto de linea
+<span></span>        sirve para poder utilizarla con css
+<i></i>              poner en cursiva
+<cite></cite>        sirve para mencionar al autor
+<blockquote></blockquote>  sirve para poner en texto con espacios, algo como poema, o en word espacio lateral
+<hr/>               crea una linea separadora
+
+*<a href="(aqui va una URL absoluta o relativa, si es absoluta va con el protocolo, es decir https o http"></a>    
+te lleva a una URL absoluta o relativa, pon un nombre a tu enlace:
+URL absoluta: generalmente las páginas web
+URL relativa: por ejemplo una imagen de tu escritorio /home/kevindaxvz/escritorio "OJO Dax" debe estar en el mismo arbol del directorio
+<a target="_blank" href="(una URL absoluta o relativa)"></a> sirve para ir a un enlace sin que se cierre nuestra pagina web
+
+<link rel="stylesheet" href="">  nos sirve para señalar que nuestro enlace tendra estilo de cascada
+<script src=""></script>         nos sirve para señalar un documento java script  
+<link rel="shortcut icon" type="image/x-icon" href="">          para poner nuestro favicon.ico al lado de <title></title>
