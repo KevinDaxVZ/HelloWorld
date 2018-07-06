@@ -1,26 +1,253 @@
-etiquetas en HTML
------------------------------------------
-<html></html>        para identificar que es un documento html
-<head></head>        cabeza principal del titulo  ,ejemplo <head><title>hola</title><head>
-<title></title>      para poner un nombre arriba de la URL, va dentro de <head></head>
-<b></b>              poner negrita un contenido
-<strong></strong>    poner en negrito un contenido con mas enfacis "no abusar de esta etiqueta"
-<body></body>        cuerpo principal donde ira el texto
-<p></p>              donde pondremos parrafo
-<h1></h1>            titul principal , <h2></h2> titulo secundario, y asi sucesivamente
-<br/>                salto de linea
-<span></span>        sirve para poder utilizarla con css
-<i></i>              poner en cursiva
-<cite></cite>        sirve para mencionar al autor
-<blockquote></blockquote>  sirve para poner en texto con espacios, algo como poema, o en word espacio lateral
-<hr/>               crea una linea separadora
+----------------------------------------------------------------------------------------------------------------------------
+/////                  etiquetas                                                                                       |||||
+----------------------------------------------------------------------------------------------------------------------------
+<hr/>       crea un linea
+<area>        sirve para señalar una porcion de nuestra imagen y darle valores
+<html></html>    sirve para espicificar que crearemos un archivo de texto HTML
+<head></head>   delimita la cabecera de nuestro texto HTML
+<title></title>  da un titulo a nuestra pagina
+<br>       saltos de linea
+<body></body> donde ira nuestro contenido de nuestra página web
+<h1></h1>,<h2></h2>,<h3></h3>,<h4></h4>,<h5></h5>,<h6></h6>  son titulares de importancia, los numeros indican el grado de importancias,etiqueta de nivel encabezado
+<p></p> sirve para demarcar un parrafo que estamos introduciendo, se puede usar como salto de linea
+<blockquote></blockquote> indica que el parrafo es parafraseado, se pondran margenes de izquierda y derecha, se usa para citar textos de autores
+<address></address>    se usa para incluir informacion sobre el autor, fecha de publicacion o modificacion, la URL de pagina , etc sobre el sitio 
+<center></center>   permite centrar todo lo que este adentro de la etiqueta 
+<pre></pre>        permite agregar espacios en blanco, o salto de linea(space y enter),etc. en pocas palabras permite presionar enter y space. 
+de imagen y de ruta:
+---------------------
+<img>		 permite agregar una imagen
+<map></map>      (su principal atributo es name="valor") aqui definimos el nombre de nuestro mapa
+<a></a>          crea un vinculo o links o anclas, todo depende de su atributo,etc
+listas:
+---------------
+lista no ordenada o no numerada:
+---------------
+<ul></ul>  indica que crearemos una lista no ordenada
+<li></li>  sera el elemento de nuestra lista , "<li></li>" es una subetiqueta
 
-*<a href="(aqui va una URL absoluta o relativa, si es absoluta va con el protocolo, es decir https o http"></a>    
-te lleva a una URL absoluta o relativa, pon un nombre a tu enlace:
-URL absoluta: generalmente las páginas web
-URL relativa: por ejemplo una imagen de tu escritorio /home/kevindaxvz/escritorio "OJO Dax" debe estar en el mismo arbol del directorio
-<a target="_blank" href="(una URL absoluta o relativa)"></a> sirve para ir a un enlace sin que se cierre nuestra pagina web
+lista ordenada o numerada:
+--------------------------
+<ol></ol>  indica que crearemos una lista ordenada
+<li></li>  misma funcion en ambos tipos de listas
 
-<link rel="stylesheet" href="">  nos sirve para señalar que nuestro enlace tendra estilo de cascada
-<script src=""></script>         nos sirve para señalar un documento java script  
-<link rel="shortcut icon" type="image/x-icon" href="">          para poner nuestro favicon.ico al lado de <title></title>
+
+lista de glosario o definicion:
+-------------------------------
+<dl></dl>  indica que crearemos una lista de definicion o glosario
+<dt></dt>  sera el elemento de nuesta lista, funciona igual que la <li></li>
+<dd></dd>  sirve para poner la definición
+
+lista de menú:
+---------------
+<menu></menu> indica que crearemos una lista de menú
+<li></li>    tiene la misma funcion, pero solo para frases de una linea, la ventaja es que si centreas el punto la sigue
+     
+lista de directorio:
+--------------------
+<dir></dir>  indica que crearemos una lista de directorios, los cuales son una palabra
+<li></li>    tiene  la misma funcio, pero solo para palabras.
+
+-----------------------------------------------------------------------------------------------------------------------------
+||||                                  Etiquetas fisicas                                                                 |||||
+-----------------------------------------------------------------------------------------------------------------------------
+
+<b></b>   pone en negrito lo contenido
+<i></i>   pone en cursiva el contenido
+<strike></strike> o <s></s> tacha con una linea del medio el contenido
+<u></u>   sub raya el contenido
+<sup></sup> pone un sub indice superior  <sub></sub> pone un sub indice inferior
+<tt></tt>   vuelve al contenido en un tipo de letra monoespaciada, tambien sirve para señalar codigo
+<big></big> vuelve mas grande el contenido, <small></small> vuelve mas pequeño el contenido
+<font></font> permite tener un control sobre el tamaño del texto(con su atributo size cuyo valor varia entre 1-7),etiqueta de nivel texto
+<basefont size="" >  permite modificar el tamaño del texto por defecto(que generalmente es 3) a excepcion de los encabezados+
+----------------------------------------------------------------------------------------------------------------------------
+|||||                               Etiquetas Logicas                                                                  |||||
+----------------------------------------------------------------------------------------------------------------------------
+<strong></strong>         resalta el texto de su interior pintandole de negrita y diciendole al navegador que este texto es de importancia
+<em></em>                 enfatisa el texto poniendole en cursiva, remplaza a la etiqueta <i></i>
+<code></code>             con esta etiqueta señalamos que el texto forma parte de un codigo, el texto sera monoespacio
+<samp></samp>             sirve para formatear ejemplos,muestras,codigos,etc.El texto formateado se mostrara como la etiqueta <code>(monoespaciada)
+<var></var>               delimita el texto,variable,argumento de comandos,etc. se lo mostrara como en cursiva
+<cite></cite>       	  se usa para introducir una referencia o cita, el texto sera mostrado en cursiva.
+<dfn></dfb>               sirve para introducir una definicion, el texto sera mostrado en cursiva.
+<kbd></kbd>               sirve para formatear el texto de entrada(imput) y mostrarla monoespaciada  
+---------------------------------------------------------------------------------------------------------------------------
+/////                      atributos                                                                                   ||||
+------------- -------------------------------------------------------------------------------------------------------------
+de tamaño:
+-----------
+size="valor"      attributo de tamaño
+align="valor" (center,left,right)   para ubicar la posicion de un parrafo, ya sea centro, izquierda , derecha 
+noshade o noshae=""     permite crear lineas con (<hr>) sin sombras
+width=""(90% del tamaño actual o en pixeñes por ejemplo 100)       permite definir un tamaño , ya sea a nuestra linea (<hr>) ,etc
+
+de ruta:
+---------
+src="ruta interna o externa"   se puede usar con (<img>)
+href="ruta"                 indica hacia donde saltar (se usa con <a>)
+nohref                      sirve para indicar que una zona no llevara a ningun sitio, no toma ningun valor este atributo
+name="valor"                lugar a donde se va saltar con el ancla, se utiliza (<a href="#valor"></a>)
+title="(comentario)"        sirve para mostrar un comentario, descripcion, etc de nuestro link
+
+de forma y color:
+----------------
+color="RRGGBB" (desde 00=minimo a FF=maximo) RR=cantidad de rojo,GG=cantidad de verde,BB=cantida de azul
+color="valor"  (esta es de otra forma) se pone el nombre del color en ingles, de los colores permitidos los cuales son:
+	
+	black				negro                        	#000000       
+	white				blanco				#FFFFFF
+	green				verde				#008000
+	maroon				marron rojizo			#800000
+	olive				verde oliva			#808000
+	navy				azul marino			#000080
+	purple				violeta				#800080
+	red				rojo				#FF0000
+	yellow				amarillo			#FFFF00
+	blue				azul				#0000FF
+	teal				verde azulado			#008080
+	lime				verde lima			#00FF00
+	aqua				azul claro			#00FFFF
+	fuchsia				fusia				#FF00FF
+	silver				gris claro			#C0C0C0
+
+
+--------------------------------------
+/////     OJO                     ||||
+--------------------------------------f
+*En la cabecera va todo aquella que afectara a página nuestra
+---------------------------------------------------------------
+|||                Caracteres especiales                     ||
+---------------------------------------------------------------
+&#numero;             para poder poner caracteres especiales con numero de acuerdo a su posicion en el estandar ISO-latin-1(ejemplo &#193;=Á)
+	&#161;=¡ ;  &#191;=¿ ;
+
+&nombredelcaracter;   para poder poner caracteres especiales con nombre:
+	&aacute;=á ; &Aacute;=Á  ;   &uuml;=ü ; &Uuml;=Ü				
+	&eacute;=é ; &Eacute;=É  ;   &ntilde;=ñ ; &Ntilde;=Ñ
+	&iacute;=í ; &Iacute;=Í  ;
+	&oacute;=ó ; &Oacute;=Ó  ;
+	&uacute;=ú ; &Uacute;=Ú  ;
+
+---------------------------------------------------------------------
+|||              Caracteres reservados                            |||
+             ---------------------------                          -------------------------------------------------------
+nota: Estos caracteres sirven para poder  utilizar <,>,etc (ejemplo escribir <b> sin que se convierta en una etiqueta)  |
+-------------------------------------------------------------------------------------------------------------------------
+     caracter                  con nombre               de acuerdo a su numero en esl estandar ISO
+    ..........                ............             .............................................
+        <      			&lt;					&#139;
+	>			&gt;					&#155;	
+	&			&amp;					&#38;
+	"			&quote;					&#34;
+
+  	®      			&reg;					&#169;
+	©			&copy;					&#174;
+    [Espacio]			&nbsp;					 
+
+nota: se puede poner por cambio del numero , un numero en codigo acsii menor que 128=2 a la 7, t
+
+-----------------------------------------------------------------------
+|||                            Comentario                           |||
+-----------------------------------------------------------------------
+<!--comentario-->	
+
+
+
+------------------------------------------------------------------------
+|||||              Atributos de la etiqueta body                  ||||||
+------------------------------------------------------------------------
+bgcolor="valor" se usa para cambiar el color de fondo(se usa en la etiqueta body)
+text="valor"    sirve para controlar el color del texto
+link="valor"    cambia el color de los enlaces hipertextos= los links (el valor por defecto es azul)
+vlink="valor"   permite cambiar el color de los link ya visitados(el color por defecto es morado)
+alink="valor"   sirve para controlar el color de los enlaces o link activos, es decir de los link que estamos pulsando(su valor por defecto es rojo)
+background="ruta"    permite poner una imagen de fondo a nuestra pagina web señalando la ruta(absoluta o relativa)
+-----------------------------------------------------------------------------
+||||                Atributos de la etiqueta img                 ||||||||
+-----------------------------------------------------------------------------
+align="valor":
+--------------
+valor=top       alinea la parte inferior del texto con la parte superior de la imagen, y luego alinea la parte inferior con su parte inferior
+valor=middlie   alinea la parte inferior del texto con la parte del centro de la imagen
+valor=bottom    alinea la parte inferior del texto con la parte inferior de la imagen
+valor=right     alinea la imagen a la derecha y permite escribir texto alrededor de la imagen
+valor=left      alinea la imagen a la izquierda y permite escribite texto alrededor de la imagen
+
+vspace="valor": (Suele estar acompañado del atributo align), indica un margen de la imagen respecto a la vertical
+---------------
+valor="": 
+
+hspace="valor": (Suele estar acompañado del atributo align), indica un margen de la imagen respecto a la horizontal
+---------------
+valor="";
+
+border="valor": sirve para poner un borde a nuestra imagen
+---------------
+
+width="valor": modifica la anchura de nuestra imagen(su valor varia entre 20 y 600 habitualmente)
+--------------
+
+height="valor": modifica la altura de nuestra imagen(su valor varia entre 20 y 600 habitualmente) 
+--------------
+
+alt="(comentario)": muestra el comentario cuando la imagen no es mostrada, suele servir mucho para navegadores no gráficos:
+------------------
+
+usemap="ruta#name":  indica donde esta nuestra imagen mapa, la cual se crea con la etiqueda <map></map>, aqui llamamos a la etiqueta map para recortar 
+-------------        nuestra imagen segun la hayamos indicado
+
+---------------------------------------------------------------------
+||||             Atributos de la etiqueta br                    |||||
+---------------------------------------------------------------------
+clear="valor":
+--------------
+valor="left"   provoca un salto de linea hasta el primer margen de texto libre de la izquierda
+valor="right"  provoca un salto de linea hasta el primer margen de texto libre de la derecha
+valor="all"    provoca un salto de linea hasta el primer margen de texto libre en cualquier caso, tambien cumple la funcion de los anterior valores
+
+-----------------------------------------------------------------------
+||||           Atributos de la etiqueta  "area"                     ||||||
+-----------------------------------------------------------------------
+href="valor o ruta"        indica el lugar al que saltaremos cuando pulsemos sobre una zona activa
+alt="comentario"           sirve para incluir un texto alternativo
+shape="valor":             define la zona , puede tener 3 valores
+--------------
+      shape="rect"               indica que la sona es un rectangulo
+      shape="circle"
+      shape="poly"
+
+coords="cordenadas"      indica el valor de las coordenadas(plano carteciano al reves, tambien se puede usar porcentajes), la cantidad de valores 
+--------------------     depende de la forma shape="valor":
+
+shape="rect"       toma 4 valores x1,y1,x2,y2
+shape="circle"     toma 3 valores x,y,radio
+shape="poly"       tiene un numero indefinido de valores la cual depende de sus vertices  x1,y1,x2,y2,x3,y3....etc
+	
+------------------------------------------------------------------------------------------------------------------------------
+|||                       TABLAS- etiqueta <table></table>                                                                 |||
+------------------------------------------------------------------------------------------------------------------------------
+<table></table>      indica que crearemos una tabla
+<tr></tr>            indica que insertaremos filas en nuestras tablas
+<th></th>     	     muestra el contenido de la columna en negrita y centrado, se usa como encabezado       
+<td></td>            sirve para introducir los datos , ya sean imagenes, enlanes, texto,listas,etc
+<caption></caption>  introduce un titulo a nuestra tabla
+
+atributos:
+----------
+border="valor"      introduce un borde a nuestra tabla
+bgcolor="valor"     introduce un color a nuestra tabla
+align=""    toma solo 2 valores, top o bottom , sirve para la etiqueta <caption></caption> para posicionar el titulo arriba o abajo respectivamente
+align=""    si va dentro de la etiqeuta <title></title> controla ubicacion de nuestra tabla y permite escribir texto al rededor de ella con los valores
+ 	    right,left,center
+valing="valor"      permite hacer un alinamiento vertical, lo valores que toma son: "top,middle,bottom"
+width="valor"       permite determinar el tamaño de la tabla
+height="valor"      permite determinar la altura de nuestra tabla
+nowrap              hace que el texto escrito no se divina en lineas para que se adecue a la tabla
+-----------------------
+atributos importantes:|
+-----------------------
+rowspan="valor"        		permite ocupar a una fila el lugar n filas juntas 
+colspa=" valor"			permite ocupar a una columna la posicion de varias
+cellspacing="valor"             agrega un margen entre celdas continuas tanto horizontal como verticalmente
+cellpadding="valor"             agrega un margen entre la celda y contenido
